@@ -28,12 +28,8 @@ const App: React.FC = () => {
     // يجب نقل هذا المنطق إلى خادم خلفي آمن (backend) أو دالة سحابية (serverless function).
     // للحصول على Bot Token: تحدث إلى @BotFather على تليجرام.
     // للحصول على Chat ID: تحدث إلى @userinfobot على تليجرام.
-    const botToken = "8249247789:AAE9saD1Bjz5L9Zqg_jZae9I5fYet0DzxGY"; 
-    const chatId = "7917961504";
-
-    // FIX: Removed the condition that checked for placeholder tokens.
-    // The check was causing a TypeScript error because the tokens are hardcoded
-    // and the comparison to placeholder strings would always be false.
+    const botToken = 'YOUR_TELEGRAM_BOT_TOKEN'; // <--- استبدل هذا بالتوكن الحقيقي
+    const chatId = 'YOUR_TELEGRAM_CHAT_ID'; // <--- استبدل هذا بمعرف الدردشة الحقيقي
 
     const itemsText = orderDetails.items.map(item =>
       `- ${item.name} ${item.size ? `(${item.size})` : ''} x ${item.quantity} = ${(item.price * item.quantity).toLocaleString()} د.ج`
