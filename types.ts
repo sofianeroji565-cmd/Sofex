@@ -43,9 +43,3 @@ export interface OrderDetails {
   items: OrderItem[];
   total: number;
 }
-
-// FIX: Add ChatMessage interface to resolve import error in SafetyChatbot.tsx.
-export interface ChatMessage {
-  sender: 'user' | 'bot';
-  text: string;
-}

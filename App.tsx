@@ -5,7 +5,6 @@ import ProductList from './components/ProductList';
 import Footer from './components/Footer';
 import CheckoutModal from './components/CheckoutModal';
 import SafetyBundles from './components/SafetyBundles';
-import SafetyChatbot from './components/SafetyChatbot';
 
 const App: React.FC = () => {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
@@ -110,7 +109,6 @@ ${itemsText}
         orderItems={currentOrderItems}
         onSubmit={handleSubmitOrder}
       />
-      <SafetyChatbot />
     </div>
   );
 };
